@@ -16,7 +16,7 @@ export default function Footer() {
             className="fill-cyan-50"
           ></path>
         </svg>
-      </div>
+        </div>
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
