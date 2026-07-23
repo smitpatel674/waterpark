@@ -6,10 +6,17 @@
   
   --color-aqua-50: #e6f9ff;
   --color-aqua-100: #ccf3ff;
+  --color-aqua-200: #99e6ff;
+  --color-aqua-300: #66d9ff;
   --color-aqua-400: #33d6ff;
   --color-aqua-500: #00ccff;
   --color-aqua-600: #00a3cc;
+  --color-aqua-700: #007a99;
   
+  --color-ocean-400: #0099cc;
+  --color-ocean-500: #007399;
+  --color-ocean-600: #006080;
+  --color-ocean-700: #005366;
   --color-ocean-800: #004d66;
   --color-ocean-900: #00334d;
   --color-ocean-950: #001a26;

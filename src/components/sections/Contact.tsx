@@ -1,149 +1,269 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { MapPin, Phone, Mail, Navigation2, Send } from "lucide-react";
+import {
+  ArrowUpRight,
+  Clock3,
+  Mail,
+  MapPin,
+  Navigation2,
+  Phone,
+  Send,
+  ShieldCheck,
+  Waves,
+} from "lucide-react";
+
+const fieldClass =
+  "w-full rounded-2xl border border-ocean-900/10 bg-slate-50 px-4 py-3.5 text-ocean-950 outline-none transition placeholder:text-ocean-900/30 hover:border-aqua-500/40 focus:border-aqua-500 focus:bg-white focus:ring-4 focus:ring-aqua-500/10";
 
 export default function Contact() {
   return (
-    <section className="relative py-24 bg-white" id="contact">
-      <div className="container mx-auto px-6">
-        
-        <div className="text-center mb-16">
+    <section
+      className="relative isolate overflow-hidden bg-[#f6fbfd] py-24 md:py-32"
+      id="contact"
+    >
+      <div className="pointer-events-none absolute inset-0 -z-10">
+        <div className="absolute -left-40 top-24 h-96 w-96 rounded-full bg-aqua-400/15 blur-3xl" />
+        <div className="absolute -right-32 bottom-0 h-96 w-96 rounded-full bg-coral-400/10 blur-3xl" />
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(0,51,77,0.035)_1px,transparent_1px),linear-gradient(90deg,rgba(0,51,77,0.035)_1px,transparent_1px)] bg-[size:48px_48px] [mask-image:linear-gradient(to_bottom,transparent,black_20%,black_80%,transparent)]" />
+      </div>
+
+      <div className="container mx-auto px-5 md:px-6">
+        <div className="mx-auto mb-12 max-w-2xl text-center md:mb-16">
+          <motion.div
+            initial={{ opacity: 0, y: 12 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mb-5 inline-flex items-center gap-2 rounded-full border border-aqua-500/20 bg-white px-4 py-2 text-xs font-black uppercase tracking-[0.2em] text-ocean-800 shadow-sm"
+          >
+            <Waves className="h-4 w-4 text-aqua-500" />
+            Plan your visit
+          </motion.div>
+
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-5xl font-black text-ocean-950 mb-4"
+            transition={{ delay: 0.05 }}
+            className="text-balance text-4xl font-black tracking-tight text-ocean-950 md:text-6xl"
           >
-            Find <span className="text-transparent bg-clip-text bg-gradient-to-r from-aqua-500 to-ocean-500">Aquatown</span>
+            Your next adventure
+            <span className="block text-gradient">starts right here.</span>
           </motion.h2>
+
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-lg text-ocean-800/70 font-medium"
+            className="mx-auto mt-5 max-w-xl text-base font-medium leading-relaxed text-ocean-800/65 md:text-lg"
           >
-            Get in touch or find your way to India&apos;s ultimate water adventure.
+            Find your way to Aquatown or send us a message. Our team is ready
+            to help you plan a perfect day on the water.
           </motion.p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-          
-          {/* Location Card */}
+        <div className="mx-auto grid max-w-6xl overflow-hidden rounded-[2rem] border border-white/80 bg-white shadow-[0_30px_90px_rgba(0,51,77,0.14)] lg:grid-cols-[0.9fr_1.1fr]">
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
+            initial={{ opacity: 0, x: -24 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="bg-cyan-50 rounded-[2rem] p-2 overflow-hidden shadow-xl border border-cyan-100"
+            transition={{ duration: 0.55 }}
+            className="relative isolate min-h-[520px] overflow-hidden bg-ocean-950 p-7 text-white md:p-10 lg:min-h-full"
           >
-            <div className="relative w-full h-[300px] rounded-[1.5rem] overflow-hidden bg-ocean-100 mb-6 group">
-              {/* Abstract Map Visual (Placeholder for actual Maps iframe) */}
-              <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/connected.png')] opacity-10 mix-blend-multiply"></div>
-              
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
-                <motion.div 
-                  animate={{ y: [0, -10, 0] }}
-                  transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-                  className="text-coral-500 drop-shadow-xl z-20"
-                >
-                  <MapPin fill="currentColor" size={48} className="text-white" />
-                </motion.div>
-                <div className="w-8 h-2 bg-ocean-900/20 rounded-full blur-sm mt-2"></div>
-                <div className="mt-4 px-4 py-2 bg-white/90 backdrop-blur-sm rounded-xl shadow-lg font-bold text-ocean-950 text-sm">
-                  Aquatown Site
+            <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_80%_10%,rgba(51,214,255,0.3),transparent_32%),radial-gradient(circle_at_10%_90%,rgba(255,92,51,0.18),transparent_30%)]" />
+            <div className="absolute -right-28 top-28 -z-10 h-72 w-72 rounded-full border border-aqua-400/15" />
+            <div className="absolute -right-16 top-40 -z-10 h-48 w-48 rounded-full border border-aqua-400/15" />
+
+            <div className="flex h-full flex-col">
+              <div>
+                <div className="mb-8 flex items-center justify-between">
+                  <span className="rounded-full border border-white/15 bg-white/10 px-3 py-1.5 text-xs font-bold uppercase tracking-widest text-aqua-100 backdrop-blur">
+                    Aquatown, Gujarat
+                  </span>
+                  <Waves className="h-7 w-7 text-aqua-400" />
+                </div>
+
+                <h3 className="max-w-sm text-3xl font-black leading-tight md:text-4xl">
+                  Make a splash,
+                  <span className="block text-aqua-400">minutes from Kadi.</span>
+                </h3>
+                <p className="mt-4 max-w-md text-sm font-medium leading-6 text-white/60 md:text-base">
+                  Easy to reach, impossible to forget. Tap below for a direct
+                  route to the park.
+                </p>
+              </div>
+
+              <div className="relative my-8 min-h-40 flex-1 overflow-hidden rounded-3xl border border-white/10 bg-white/5">
+                <div className="absolute inset-0 bg-[linear-gradient(35deg,transparent_35%,rgba(51,214,255,0.08)_35%,rgba(51,214,255,0.08)_38%,transparent_38%,transparent_62%,rgba(255,255,255,0.06)_62%,rgba(255,255,255,0.06)_65%,transparent_65%)] bg-[size:72px_72px]" />
+                <div className="absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 flex-col items-center">
+                  <span className="absolute h-20 w-20 animate-ping rounded-full bg-aqua-400/15 [animation-duration:2.4s]" />
+                  <span className="relative flex h-14 w-14 items-center justify-center rounded-full border-4 border-ocean-950 bg-coral-500 shadow-[0_14px_35px_rgba(255,92,51,0.45)]">
+                    <MapPin className="h-6 w-6" />
+                  </span>
+                  <span className="mt-3 whitespace-nowrap rounded-xl bg-white px-3 py-2 text-xs font-black text-ocean-950 shadow-xl">
+                    You&apos;ve found us
+                  </span>
                 </div>
               </div>
 
-              {/* Water features on map */}
-              <div className="absolute bottom-10 left-10 w-32 h-16 bg-aqua-400/30 rounded-full blur-xl transform rotate-12"></div>
-              <div className="absolute top-10 right-10 w-48 h-24 bg-ocean-500/20 rounded-full blur-xl transform -rotate-12"></div>
-            </div>
-
-            <div className="px-6 pb-6">
-              <div className="flex flex-col gap-6">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center shrink-0 shadow-sm">
-                    <MapPin className="text-aqua-500 w-6 h-6" />
-                  </div>
+              <div>
+                <div className="mb-6 flex items-start gap-3">
+                  <span className="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-aqua-400/15 text-aqua-400">
+                    <MapPin className="h-5 w-5" />
+                  </span>
                   <div>
-                    <h4 className="font-bold text-ocean-950 text-lg mb-1">Address</h4>
-                    <p className="text-ocean-800/80 font-medium">E/4, Vatsalya City, Detroj Road,<br/>Kadi – 382715, Gujarat, India</p>
+                    <p className="text-xs font-bold uppercase tracking-widest text-white/40">
+                      Park address
+                    </p>
+                    <address className="mt-1 text-sm font-semibold not-italic leading-6 text-white/85">
+                      E/4, Vatsalya City, Detroj Road
+                      <br />
+                      Kadi – 382715, Gujarat, India
+                    </address>
                   </div>
                 </div>
 
-                <div className="flex flex-col sm:flex-row gap-4 mt-2">
-                  <a href="#" className="flex-1 py-3 px-4 rounded-xl bg-ocean-900 hover:bg-ocean-800 text-white font-bold text-sm flex items-center justify-center gap-2 shadow-lg transition-colors">
-                    <Navigation2 size={18} /> Get Directions
-                  </a>
-                  <a href="tel:+916355918057" className="flex-1 py-3 px-4 rounded-xl bg-white hover:bg-cyan-50 border border-cyan-100 text-ocean-900 font-bold text-sm flex items-center justify-center gap-2 shadow-sm transition-colors">
-                    <Phone size={18} className="text-aqua-500" /> Call Now
-                  </a>
-                  <a href="mailto:info@aquatown.in" className="flex-1 py-3 px-4 rounded-xl bg-white hover:bg-cyan-50 border border-cyan-100 text-ocean-900 font-bold text-sm flex items-center justify-center gap-2 shadow-sm transition-colors">
-                    <Mail size={18} className="text-aqua-500" /> Email Us
-                  </a>
-                </div>
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=E%2F4%2C%20Vatsalya%20City%2C%20Detroj%20Road%2C%20Kadi%2C%20Gujarat%20382715"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="group flex w-full items-center justify-between rounded-2xl bg-white px-5 py-4 font-black text-ocean-950 shadow-lg transition hover:-translate-y-0.5 hover:bg-aqua-50"
+                >
+                  <span className="flex items-center gap-3">
+                    <Navigation2 className="h-5 w-5 text-aqua-500" />
+                    Get directions
+                  </span>
+                  <ArrowUpRight className="h-5 w-5 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+                </a>
               </div>
             </div>
           </motion.div>
 
-          {/* Contact Form */}
           <motion.div
-            initial={{ opacity: 0, x: 30 }}
+            initial={{ opacity: 0, x: 24 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="bg-white rounded-[2rem] p-8 md:p-10 shadow-2xl border border-cyan-50 relative overflow-hidden group"
+            transition={{ duration: 0.55, delay: 0.08 }}
+            className="p-7 md:p-10 lg:p-12"
           >
-            {/* Water theme decoration */}
-            <div className="absolute top-0 right-0 w-32 h-32 bg-aqua-100 rounded-bl-full -z-10 group-hover:scale-110 transition-transform duration-500"></div>
+            <div className="mb-8 flex flex-col gap-5 sm:flex-row sm:items-start sm:justify-between">
+              <div>
+                <p className="mb-2 text-xs font-black uppercase tracking-[0.18em] text-aqua-600">
+                  We&apos;re here to help
+                </p>
+                <h3 className="text-3xl font-black text-ocean-950">
+                  Send us a message
+                </h3>
+              </div>
+              <div className="flex gap-2">
+                <a
+                  href="tel:+916355918057"
+                  aria-label="Call Aquatown"
+                  className="flex h-11 w-11 items-center justify-center rounded-xl border border-ocean-900/10 text-ocean-800 transition hover:border-aqua-500 hover:bg-aqua-50 hover:text-aqua-600"
+                >
+                  <Phone className="h-5 w-5" />
+                </a>
+                <a
+                  href="mailto:info@aquatown.in"
+                  aria-label="Email Aquatown"
+                  className="flex h-11 w-11 items-center justify-center rounded-xl border border-ocean-900/10 text-ocean-800 transition hover:border-aqua-500 hover:bg-aqua-50 hover:text-aqua-600"
+                >
+                  <Mail className="h-5 w-5" />
+                </a>
+              </div>
+            </div>
 
-            <h3 className="text-2xl font-black text-ocean-950 mb-6">Send a Message</h3>
-            
             <form className="space-y-5">
               <div>
-                <label className="block text-sm font-bold text-ocean-900 mb-2">Full Name</label>
-                <input 
-                  type="text" 
-                  placeholder="John Doe" 
-                  className="w-full bg-cyan-50/50 border border-cyan-100 focus:border-aqua-400 focus:ring-2 focus:ring-aqua-400/20 rounded-xl px-4 py-3 outline-none transition-all text-ocean-950 font-medium placeholder:text-ocean-900/30"
+                <label
+                  className="mb-2 block text-sm font-bold text-ocean-900"
+                  htmlFor="contact-name"
+                >
+                  Full name
+                </label>
+                <input
+                  className={fieldClass}
+                  id="contact-name"
+                  name="name"
+                  placeholder="Your name"
+                  required
+                  type="text"
                 />
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+
+              <div className="grid gap-5 sm:grid-cols-2">
                 <div>
-                  <label className="block text-sm font-bold text-ocean-900 mb-2">Phone Number</label>
-                  <input 
-                    type="tel" 
-                    placeholder="+91 00000 00000" 
-                    className="w-full bg-cyan-50/50 border border-cyan-100 focus:border-aqua-400 focus:ring-2 focus:ring-aqua-400/20 rounded-xl px-4 py-3 outline-none transition-all text-ocean-950 font-medium placeholder:text-ocean-900/30"
+                  <label
+                    className="mb-2 block text-sm font-bold text-ocean-900"
+                    htmlFor="contact-phone"
+                  >
+                    Phone number
+                  </label>
+                  <input
+                    className={fieldClass}
+                    id="contact-phone"
+                    inputMode="tel"
+                    name="phone"
+                    placeholder="+91 00000 00000"
+                    type="tel"
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-bold text-ocean-900 mb-2">Email Address</label>
-                  <input 
-                    type="email" 
-                    placeholder="john@example.com" 
-                    className="w-full bg-cyan-50/50 border border-cyan-100 focus:border-aqua-400 focus:ring-2 focus:ring-aqua-400/20 rounded-xl px-4 py-3 outline-none transition-all text-ocean-950 font-medium placeholder:text-ocean-900/30"
+                  <label
+                    className="mb-2 block text-sm font-bold text-ocean-900"
+                    htmlFor="contact-email"
+                  >
+                    Email address
+                  </label>
+                  <input
+                    className={fieldClass}
+                    id="contact-email"
+                    name="email"
+                    placeholder="you@example.com"
+                    required
+                    type="email"
                   />
                 </div>
               </div>
+
               <div>
-                <label className="block text-sm font-bold text-ocean-900 mb-2">Message</label>
-                <textarea 
+                <label
+                  className="mb-2 block text-sm font-bold text-ocean-900"
+                  htmlFor="contact-message"
+                >
+                  How can we help?
+                </label>
+                <textarea
+                  className={`${fieldClass} min-h-32 resize-y`}
+                  id="contact-message"
+                  name="message"
+                  placeholder="Tell us about your visit, group size, or question..."
+                  required
                   rows={4}
-                  placeholder="How can we help you?" 
-                  className="w-full bg-cyan-50/50 border border-cyan-100 focus:border-aqua-400 focus:ring-2 focus:ring-aqua-400/20 rounded-xl px-4 py-3 outline-none transition-all text-ocean-950 font-medium placeholder:text-ocean-900/30 resize-none"
-                ></textarea>
+                />
               </div>
-              
-              <button 
-                type="button" 
-                className="w-full py-4 rounded-xl bg-gradient-to-r from-aqua-500 to-ocean-500 hover:from-aqua-400 hover:to-ocean-400 text-white font-bold text-lg shadow-lg shadow-aqua-500/30 hover:shadow-aqua-500/50 hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2"
+
+              <button
+                className="group flex w-full items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-aqua-500 to-ocean-800 px-6 py-4 text-base font-black text-white shadow-[0_14px_30px_rgba(0,163,204,0.25)] transition hover:-translate-y-0.5 hover:shadow-[0_18px_35px_rgba(0,163,204,0.35)] focus:outline-none focus:ring-4 focus:ring-aqua-500/25"
+                type="button"
               >
-                Send Message <Send size={20} />
+                Send message
+                <Send className="h-5 w-5 transition-transform group-hover:translate-x-1" />
               </button>
             </form>
-          </motion.div>
 
+            <div className="mt-7 grid gap-3 border-t border-ocean-900/10 pt-6 sm:grid-cols-2">
+              <div className="flex items-center gap-3 text-sm font-semibold text-ocean-800/65">
+                <Clock3 className="h-5 w-5 shrink-0 text-aqua-500" />
+                Replies within 24 hours
+              </div>
+              <div className="flex items-center gap-3 text-sm font-semibold text-ocean-800/65">
+                <ShieldCheck className="h-5 w-5 shrink-0 text-aqua-500" />
+                Your details stay private
+              </div>
+            </div>
+          </motion.div>
         </div>
       </div>
     </section>

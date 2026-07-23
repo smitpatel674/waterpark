@@ -1,0 +1,301 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link [ref=e5] [cursor=pointer]:
+        - /url: "#"
+        - img "Aquatown Logo" [ref=e6]
+      - navigation [ref=e7]:
+        - link "Attractions" [ref=e8] [cursor=pointer]:
+          - /url: "#attractions"
+        - link "Experience" [ref=e9] [cursor=pointer]:
+          - /url: "#experience"
+        - link "Safety" [ref=e10] [cursor=pointer]:
+          - /url: "#safety"
+        - link "Location" [ref=e11] [cursor=pointer]:
+          - /url: "#location"
+      - link "Get Updates" [ref=e13] [cursor=pointer]:
+        - /url: "#contact"
+  - main [ref=e14]:
+    - generic [ref=e19]:
+      - generic [ref=e20]: Coming Soon
+      - heading "India’s Biggest Inflatable Water Adventure Is Coming" [level=1] [ref=e21]
+      - paragraph [ref=e22]: Get ready for giant inflatable obstacles, thrilling water slides, floating adventures, India’s first Water Go-Kart experience, relaxing lazy river moments, and unforgettable fun for every age.
+      - generic [ref=e23]:
+        - link "Explore Attractions" [ref=e24] [cursor=pointer]:
+          - /url: "#attractions"
+        - link "Get Launch Updates" [ref=e25] [cursor=pointer]:
+          - /url: "#contact"
+    - generic [ref=e36]:
+      - generic [ref=e37]:
+        - heading "A New Wave of Adventure Is Coming" [level=2] [ref=e38]
+        - paragraph [ref=e39]: Aquatown is an upcoming inflatable-format water adventure park designed to bring together thrilling water challenges, floating attractions, giant slides, relaxing experiences, and family-friendly entertainment in one unforgettable destination.
+      - generic [ref=e40]:
+        - generic [ref=e41]:
+          - heading "India’s Biggest" [level=4] [ref=e47]
+          - paragraph [ref=e48]: Inflatable Adventure
+        - generic [ref=e49]:
+          - heading "India’s First" [level=4] [ref=e53]
+          - paragraph [ref=e54]: Water Go-Kart
+        - generic [ref=e55]:
+          - heading "New Attractions" [level=4] [ref=e62]
+          - paragraph [ref=e63]: Every Season
+        - generic [ref=e64]:
+          - heading "Adventures" [level=4] [ref=e71]
+          - paragraph [ref=e72]: For Every Age
+    - generic [ref=e81]:
+      - generic [ref=e83]:
+        - heading "Dive Into the Adventure" [level=2] [ref=e84]
+        - paragraph [ref=e85]: Explore a world of inflatable challenges, high-speed excitement, floating fun, and relaxing water experiences.
+      - generic [ref=e86]:
+        - generic [ref=e87] [cursor=pointer]:
+          - img "Inflatable Adventure Park" [ref=e88]
+          - generic [ref=e92]:
+            - heading "Inflatable Adventure Park" [level=3] [ref=e93]
+            - paragraph [ref=e94]: India's largest inflatable water obstacle course with climbing walls, slides, balance challenges, and exciting adventure zones.
+            - generic [ref=e95]: Discover More
+        - generic [ref=e99] [cursor=pointer]:
+          - img "Water Go-Kart" [ref=e100]
+          - generic [ref=e103]: India's First
+          - generic [ref=e105]:
+            - heading "Water Go-Kart" [level=3] [ref=e106]
+            - paragraph [ref=e107]: Experience India's first water-based go-kart racing attraction with a unique blend of speed and water adventure.
+            - generic [ref=e108]: Discover More
+        - generic [ref=e112] [cursor=pointer]:
+          - img "Adult Inflatable Pool" [ref=e113]
+          - generic [ref=e117]:
+            - heading "Adult Inflatable Pool" [level=3] [ref=e118]
+            - paragraph [ref=e119]: A massive inflatable water playground designed for thrill seekers with challenging obstacles and interactive activities.
+            - generic [ref=e120]: Discover More
+        - generic [ref=e124] [cursor=pointer]:
+          - img "Kids Inflatable Pool" [ref=e125]
+          - generic [ref=e129]:
+            - heading "Kids Inflatable Pool" [level=3] [ref=e130]
+            - paragraph [ref=e131]: A dedicated children's water play area featuring safe inflatable slides, splash games, and fun-filled attractions.
+            - generic [ref=e132]: Discover More
+        - generic [ref=e136] [cursor=pointer]:
+          - img "Lazy River" [ref=e137]
+          - generic [ref=e141]:
+            - heading "Lazy River" [level=3] [ref=e142]
+            - paragraph [ref=e143]: Float peacefully through a scenic lazy river designed for relaxation between adventure experiences.
+            - generic [ref=e144]: Discover More
+        - generic [ref=e148] [cursor=pointer]:
+          - img "Giant Inflatable Slides" [ref=e149]
+          - generic [ref=e153]:
+            - heading "Giant Inflatable Slides" [level=3] [ref=e154]
+            - paragraph [ref=e155]: Slide into excitement with oversized inflatable water slides suitable for different thrill levels.
+            - generic [ref=e156]: Discover More
+    - generic [ref=e160]:
+      - generic [ref=e166]:
+        - generic [ref=e167]: Coming Soon
+        - heading "India's First Water Go-Kart Experience" [level=2] [ref=e168]
+        - paragraph [ref=e169]: Feel the rush as you race across the water in a completely new go-karting experience built for speed, excitement, and unforgettable competition.
+      - generic:
+        - generic:
+          - generic:
+            - img "Helmeted racer driving a blue and orange water go-kart"
+    - generic [ref=e171]:
+      - generic [ref=e172]:
+        - heading "A New Adventure Every Season" [level=2] [ref=e173]
+        - paragraph [ref=e174]: Aquatown will continuously introduce new inflatable rides, slides, challenges, and floating attractions so every visit feels fresh, exciting, and completely different.
+      - generic [ref=e175]:
+        - generic [ref=e176]:
+          - generic [ref=e178]:
+            - img "Summer Splash" [ref=e180]
+            - generic [ref=e184]:
+              - generic [ref=e185]: Concept Theme
+              - heading "Summer Splash" [level=3] [ref=e186]
+              - paragraph [ref=e187]: Giant inflatable water slides and cool refreshing obstacle courses perfect for the summer heat.
+          - generic:
+            - button [ref=e188]
+            - button [ref=e191]
+        - generic [ref=e194]:
+          - button [ref=e195]
+          - button [ref=e196]
+          - button [ref=e197]
+    - generic [ref=e203]:
+      - generic [ref=e205]:
+        - heading "Adventure Designed for Everyone" [level=2] [ref=e206]
+        - paragraph [ref=e207]: Aquatown is being designed with dedicated experiences for adults, children, families, and adventure seekers, supported by carefully planned activity zones and safety-focused operations.
+        - generic [ref=e208]:
+          - img "Safety Overview" [ref=e209]
+          - generic [ref=e217]:
+            - heading "Safety First" [level=3] [ref=e218]
+            - paragraph [ref=e219]: Our top priority is ensuring a secure environment so you can focus purely on the fun.
+      - generic [ref=e222]:
+        - generic [ref=e223]:
+          - heading "Dedicated Kids Zone" [level=4] [ref=e229]
+          - paragraph [ref=e230]: Safe, appropriately sized inflatables with constant monitoring.
+        - generic [ref=e231]:
+          - heading "Adult Adventure Zone" [level=4] [ref=e239]
+          - paragraph [ref=e240]: High-intensity obstacles designed specifically for older thrill-seekers.
+        - generic [ref=e241]:
+          - heading "Trained Safety Team" [level=4] [ref=e251]
+          - paragraph [ref=e252]: Certified lifeguards and staff stationed across all attraction zones.
+        - generic [ref=e253]:
+          - heading "Safe Structures" [level=4] [ref=e259]
+          - paragraph [ref=e260]: Premium, commercial-grade inflatables with strict safety standards.
+        - generic [ref=e261]:
+          - heading "Family-Friendly" [level=4] [ref=e267]
+          - paragraph [ref=e268]: A welcoming, clean, and well-managed environment for the whole family.
+        - generic [ref=e269]:
+          - heading "Separate Areas" [level=4] [ref=e274]
+          - paragraph [ref=e275]: Carefully planned layout to prevent overcrowding and mix-ups.
+    - generic [ref=e277]:
+      - generic [ref=e278]:
+        - generic [ref=e279]: Our Story
+        - heading "Our Journey" [level=2] [ref=e280]
+        - paragraph [ref=e281]: From a bold vision to India's biggest inflatable water adventure — follow the Aquatown story.
+      - generic [ref=e282]:
+        - generic [ref=e291]:
+          - img "The Vision Begins" [ref=e293]
+          - generic [ref=e295]:
+            - generic [ref=e296]: "2023"
+            - heading "The Vision Begins" [level=3] [ref=e297]
+            - paragraph [ref=e298]: A bold dream was born — to create an unforgettable water adventure experience unlike anything India had ever seen.
+        - generic [ref=e306]:
+          - img "Inspiration from Dubai" [ref=e308]
+          - generic [ref=e310]:
+            - generic [ref=e311]: "2024"
+            - heading "Inspiration from Dubai" [level=3] [ref=e312]
+            - paragraph [ref=e313]: A visit to Dubai introduced us to world-class inflatable water attractions and immersive entertainment.
+        - generic [ref=e322]:
+          - img "Research & Planning" [ref=e324]
+          - generic [ref=e326]:
+            - generic [ref=e327]: "2025"
+            - heading "Research & Planning" [level=3] [ref=e328]
+            - paragraph [ref=e329]: A year dedicated to extensive research, market analysis, location selection, global partnerships, and designing the perfect experience.
+        - generic [ref=e341]:
+          - img "Start to Build Up" [ref=e343]
+          - generic [ref=e345]:
+            - generic [ref=e346]: 2026 — Now
+            - heading "Start to Build Up" [level=3] [ref=e348]
+            - paragraph [ref=e349]: The dream turned into action! We began building India's BIGGEST inflatable water park with unmatched attractions.
+        - generic [ref=e361]:
+          - img "Be Ready" [ref=e363]
+          - generic [ref=e365]:
+            - generic [ref=e366]: "2027"
+            - heading "Be Ready" [level=3] [ref=e367]
+            - paragraph [ref=e368]: Everything comes together as we prepare to open the gates to India's most exciting water adventure destination.
+        - generic [ref=e379]:
+          - img "Something BIG is Coming!" [ref=e381]
+          - generic [ref=e383]:
+            - generic [ref=e384]: "2028"
+            - heading "Something BIG is Coming!" [level=3] [ref=e385]
+            - paragraph [ref=e386]: Get ready for the next level of adventure. A whole new experience is on the horizon! Stay tuned!
+    - generic [ref=e391]:
+      - generic [ref=e392]:
+        - heading "The Adventure Begins Soon" [level=2] [ref=e393]
+        - paragraph [ref=e394]: Official Launch Date Will Be Announced Soon
+      - generic [ref=e395]:
+        - generic [ref=e396]:
+          - generic [ref=e397]: "00"
+          - generic [ref=e400]: Days
+        - generic [ref=e401]:
+          - generic [ref=e402]: "00"
+          - generic [ref=e405]: Hours
+        - generic [ref=e406]:
+          - generic [ref=e407]: "00"
+          - generic [ref=e410]: Minutes
+        - generic [ref=e411]:
+          - generic [ref=e412]: "00"
+          - generic [ref=e415]: Seconds
+      - generic [ref=e416]:
+        - paragraph [ref=e417]: Be the first to receive launch updates, exclusive announcements, attraction reveals, and opening offers.
+        - generic [ref=e418]:
+          - textbox "Enter your email address" [ref=e419]
+          - button "Notify Me" [ref=e420]
+    - generic [ref=e426]:
+      - generic [ref=e427]:
+        - generic [ref=e428]: Plan your visit
+        - heading "Your next adventure starts right here." [level=2] [ref=e433]:
+          - text: Your next adventure
+          - generic [ref=e434]: starts right here.
+        - paragraph [ref=e435]: Find your way to Aquatown or send us a message. Our team is ready to help you plan a perfect day on the water.
+      - generic [ref=e436]:
+        - generic [ref=e441]:
+          - generic [ref=e442]:
+            - generic [ref=e443]: Aquatown, Gujarat
+            - heading "Make a splash, minutes from Kadi." [level=3] [ref=e449]:
+              - text: Make a splash,
+              - generic [ref=e450]: minutes from Kadi.
+            - paragraph [ref=e451]: Easy to reach, impossible to forget. Tap below for a direct route to the park.
+          - generic [ref=e452]: You've found us
+          - generic [ref=e461]:
+            - generic [ref=e467]:
+              - paragraph [ref=e468]: Park address
+              - generic [ref=e469]: E/4, Vatsalya City, Detroj RoadKadi – 382715, Gujarat, India
+            - link [ref=e470] [cursor=pointer]:
+              - /url: https://www.google.com/maps/search/?api=1&query=E%2F4%2C%20Vatsalya%20City%2C%20Detroj%20Road%2C%20Kadi%2C%20Gujarat%20382715
+        - generic [ref=e477]:
+          - generic [ref=e478]:
+            - generic [ref=e479]:
+              - paragraph [ref=e480]: We're here to help
+              - heading "Send us a message" [level=3] [ref=e481]
+            - generic [ref=e482]:
+              - link "Call Aquatown" [ref=e483] [cursor=pointer]:
+                - /url: tel:+916355918057
+              - link "Email Aquatown" [ref=e486] [cursor=pointer]:
+                - /url: mailto:info@aquatown.in
+          - generic [ref=e490]:
+            - generic [ref=e491]:
+              - generic [ref=e492]: Full name
+              - textbox "Full name" [ref=e493]:
+                - /placeholder: Your name
+            - generic [ref=e494]:
+              - generic [ref=e495]:
+                - generic [ref=e496]: Phone number
+                - textbox "Phone number" [ref=e497]:
+                  - /placeholder: +91 00000 00000
+              - generic [ref=e498]:
+                - generic [ref=e499]: Email address
+                - textbox "Email address" [ref=e500]:
+                  - /placeholder: you@example.com
+            - generic [ref=e501]:
+              - generic [ref=e502]: How can we help?
+              - textbox "How can we help?" [ref=e503]:
+                - /placeholder: Tell us about your visit, group size, or question...
+            - button "Send message" [ref=e504]
+          - generic [ref=e508]:
+            - generic [ref=e509]: Replies within 24 hours
+            - generic [ref=e513]: Your details stay private
+  - contentinfo [ref=e517]:
+    - generic [ref=e521]:
+      - generic [ref=e522]:
+        - generic [ref=e523]:
+          - link [ref=e524] [cursor=pointer]:
+            - /url: "#"
+            - img "Aquatown Logo" [ref=e525]
+          - paragraph [ref=e526]: India’s Ultimate Inflatable Water Adventure Park. Get ready for thrilling water challenges, floating attractions, and family-friendly entertainment.
+          - generic [ref=e527]: Coming Soon
+        - generic [ref=e528]:
+          - heading "Quick Links" [level=4] [ref=e529]
+          - list [ref=e530]:
+            - listitem [ref=e531]:
+              - link "Attractions" [ref=e532] [cursor=pointer]:
+                - /url: "#attractions"
+            - listitem [ref=e533]:
+              - link "Experience" [ref=e534] [cursor=pointer]:
+                - /url: "#experience"
+            - listitem [ref=e535]:
+              - link "Safety" [ref=e536] [cursor=pointer]:
+                - /url: "#safety"
+            - listitem [ref=e537]:
+              - link "Contact Us" [ref=e538] [cursor=pointer]:
+                - /url: "#contact"
+        - generic [ref=e539]:
+          - heading "Contact" [level=4] [ref=e540]
+          - list [ref=e541]:
+            - listitem [ref=e542]: E/4, Vatsalya City, Detroj Road,Kadi – 382715, Gujarat, India
+            - listitem [ref=e543]: +91 63559 18057
+            - listitem [ref=e544]:
+              - link "info@aquatown.in" [ref=e545] [cursor=pointer]:
+                - /url: mailto:info@aquatown.in
+      - generic [ref=e546]:
+        - paragraph [ref=e547]: © 2026 Aquatown. All Rights Reserved.
+        - generic [ref=e548]:
+          - link "Instagram" [ref=e549] [cursor=pointer]:
+            - /url: "#"
+          - link "Facebook" [ref=e552] [cursor=pointer]:
+            - /url: "#"
+          - link "Twitter" [ref=e555] [cursor=pointer]:
+            - /url: "#"

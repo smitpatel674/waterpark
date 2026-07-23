@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef } from "react";
+import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import {
   Lightbulb,
@@ -16,60 +17,66 @@ const milestones = [
     year: "2023",
     title: "The Vision Begins",
     description:
-      "A bold dream was born — to create an unforgettable water adventure experience unlike anything India had ever seen. The journey of Aquatown started with a vision to redefine water entertainment through innovation, adventure, and world-class attractions.",
+      "A bold dream was born — to create an unforgettable water adventure experience unlike anything India had ever seen.",
     icon: Lightbulb,
     color: "from-aqua-400 to-aqua-600",
-    glowColor: "shadow-aqua-500/40",
+    bgColor: "bg-aqua-500",
+    image: "/timeline-vision.png",
     status: "completed",
   },
   {
     year: "2024",
     title: "Inspiration from Dubai",
     description:
-      "A visit to Dubai introduced us to world-class inflatable water attractions and immersive entertainment. Inspired by this experience, we envisioned bringing the concept to India—bigger, better, and unlike anything seen before.",
+      "A visit to Dubai introduced us to world-class inflatable water attractions and immersive entertainment.",
     icon: Plane,
     color: "from-ocean-400 to-ocean-600",
-    glowColor: "shadow-ocean-500/40",
+    bgColor: "bg-ocean-500",
+    image: "/timeline-dubai.png",
     status: "completed",
   },
   {
     year: "2025",
     title: "Research & Planning",
     description:
-      "A year dedicated to extensive research, market analysis, location selection, global partnerships, attraction planning, and designing an experience tailored for Indian visitors while meeting international standards.",
+      "A year dedicated to extensive research, market analysis, location selection, global partnerships, and designing the perfect experience.",
     icon: Search,
     color: "from-cyan-400 to-cyan-600",
-    glowColor: "shadow-cyan-500/40",
+    bgColor: "bg-cyan-500",
+    image: "/timeline-research.png",
     status: "completed",
   },
   {
     year: "2026",
-    title: "Building the Dream",
+    title: "Start to Build Up",
     description:
-      "Construction officially began as the Aquatown vision started taking shape. Every attraction, from giant inflatable adventure zones to India\u2019s First Water Go-Kart, was carefully designed to deliver a world-class experience focused on fun, innovation, and safety.",
+      "The dream turned into action! We began building India's BIGGEST inflatable water park with unmatched attractions.",
     icon: HardHat,
     color: "from-coral-400 to-coral-600",
-    glowColor: "shadow-coral-500/40",
+    bgColor: "bg-coral-500",
+    image: "/timeline-construction.png",
     status: "current",
   },
   {
     year: "2027",
-    title: "Grand Opening",
+    title: "Be Ready",
     description:
-      "Aquatown proudly opens as India\u2019s Biggest Inflatable Water Adventure Park, introducing a completely new category of water entertainment. Guests will enjoy giant inflatable obstacle courses, adventure zones, family attractions, relaxing experiences, and India\u2019s First Water Go-Kart.",
+      "Everything comes together as we prepare to open the gates to India's most exciting water adventure destination.",
     icon: PartyPopper,
     color: "from-yellow-400 to-yellow-600",
-    glowColor: "shadow-yellow-500/40",
+    bgColor: "bg-yellow-500",
+    image: "/timeline-opening.png",
     status: "upcoming",
   },
   {
     year: "2028",
-    title: "Something Even Bigger Is Coming...",
+    title: "Something BIG is Coming!",
     description:
-      "The journey doesn\u2019t stop here. Aquatown is already working on the next generation of water adventures, with exciting new attractions, larger experiences, and innovative concepts currently under development.",
+      "Get ready for the next level of adventure. A whole new experience is on the horizon! Stay tuned!",
     icon: Rocket,
     color: "from-purple-400 to-purple-600",
-    glowColor: "shadow-purple-500/40",
+    bgColor: "bg-purple-500",
+    image: "/timeline-future.png",
     status: "upcoming",
   },
 ];
@@ -121,11 +128,11 @@ export default function Timeline() {
         </motion.div>
 
         {/* Timeline */}
-        <div className="relative max-w-5xl mx-auto">
+        <div className="relative max-w-6xl mx-auto">
           {/* Central Vertical Line (static background) */}
           <div className="absolute left-6 md:left-1/2 md:-translate-x-px top-0 bottom-0 w-0.5 bg-white/10"></div>
 
-          {/* Animated Progress Line — stops at current year (2026), does not extend into future */}
+          {/* Animated Progress Line */}
           <motion.div
             style={{ height: lineHeight }}
             className="absolute left-6 md:left-1/2 md:-translate-x-px top-0 w-0.5 bg-gradient-to-b from-aqua-400 via-aqua-300 to-coral-400 origin-top max-h-[60%]"
@@ -134,7 +141,7 @@ export default function Timeline() {
           {/* Milestone Items */}
           {milestones.map((milestone, index) => {
             const Icon = milestone.icon;
-            const isEven = index % 2 === 0;
+            const isLeft = index % 2 === 0;
 
             return (
               <motion.div
@@ -143,81 +150,101 @@ export default function Timeline() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-80px" }}
                 transition={{ duration: 0.6, delay: 0.1 }}
-                className={`relative flex items-start mb-16 last:mb-0 md:items-center ${
-                  isEven ? "md:flex-row" : "md:flex-row-reverse"
-                }`}
+                className="relative mb-20 last:mb-0"
               >
-                {/* Timeline Dot */}
-                <div className="absolute left-6 md:left-1/2 -translate-x-1/2 z-20">
+                {/* Timeline Icon — Center */}
+                <div className="absolute left-6 md:left-1/2 -translate-x-1/2 z-20 top-1/2 -translate-y-1/2">
                   <div
-                    className={`relative w-12 h-12 rounded-full bg-gradient-to-br ${milestone.color} flex items-center justify-center shadow-lg ${milestone.glowColor} ${
+                    className={`relative w-12 h-12 md:w-14 md:h-14 rounded-full bg-gradient-to-br ${milestone.color} flex items-center justify-center shadow-lg shadow-black/30 border-4 border-ocean-950 ${
                       milestone.status === "current"
                         ? "ring-4 ring-coral-400/50 ring-offset-2 ring-offset-ocean-950"
                         : ""
                     }`}
                   >
-                    <Icon size={20} className="text-white" />
+                    <Icon size={22} className="text-white" />
                     {milestone.status === "current" && (
                       <span className="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-coral-400 animate-ping"></span>
                     )}
                   </div>
                 </div>
 
-                {/* Content Card */}
+                {/* Card — alternating sides */}
                 <div
-                  className={`ml-16 md:ml-0 md:w-[calc(50%-3rem)] ${
-                    isEven ? "md:pr-8 md:text-right" : "md:pl-8 md:text-left"
+                  className={`ml-16 md:ml-0 md:w-[calc(50%-3.5rem)] ${
+                    isLeft ? "md:mr-auto md:pr-0" : "md:ml-auto md:pl-0"
                   }`}
                 >
                   <div
-                    className={`group relative p-6 md:p-8 rounded-2xl border transition-all duration-500 hover:-translate-y-1 ${
+                    className={`group relative rounded-2xl border overflow-hidden transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl ${
                       milestone.status === "current"
-                        ? "bg-white/10 backdrop-blur-lg border-coral-500/40 shadow-xl shadow-coral-500/10"
+                        ? "bg-ocean-800/80 backdrop-blur-lg border-coral-500/40 shadow-xl shadow-coral-500/10"
                         : milestone.status === "completed"
-                        ? "bg-white/5 backdrop-blur-sm border-white/10 hover:bg-white/10 hover:border-white/20"
-                        : "bg-white/[0.03] backdrop-blur-sm border-white/5 hover:bg-white/[0.07] hover:border-white/10"
+                        ? "bg-ocean-800/60 backdrop-blur-sm border-white/10 hover:bg-ocean-800/80 hover:border-aqua-500/30"
+                        : "bg-ocean-800/40 backdrop-blur-sm border-white/5 hover:bg-ocean-800/60 hover:border-white/15"
                     }`}
                   >
-                    {/* Year Badge */}
-                    <div
-                      className={`inline-flex items-center gap-2 mb-3 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest ${
-                        milestone.status === "current"
-                          ? "bg-coral-500/20 text-coral-300"
-                          : milestone.status === "completed"
-                          ? "bg-aqua-500/15 text-aqua-300"
-                          : "bg-white/10 text-white/50"
-                      }`}
-                    >
-                      {milestone.status === "current" && (
-                        <span className="w-2 h-2 rounded-full bg-coral-400 animate-pulse"></span>
-                      )}
-                      {milestone.year}
-                      {milestone.status === "current" && " — Now"}
-                    </div>
+                    {/* Card inner layout: image + text */}
+                    <div className="flex flex-col sm:flex-row">
+                      {/* Image */}
+                      <div className="relative w-full sm:w-40 md:w-48 h-40 sm:h-auto shrink-0 overflow-hidden">
+                        <Image
+                          src={milestone.image}
+                          alt={milestone.title}
+                          fill
+                          className="object-cover group-hover:scale-110 transition-transform duration-700"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-r from-transparent to-ocean-800/30"></div>
+                      </div>
 
-                    <h3
-                      className={`text-xl md:text-2xl font-black mb-3 ${
-                        milestone.status === "upcoming"
-                          ? "text-white/60"
-                          : "text-white"
-                      }`}
-                    >
-                      {milestone.title}
-                    </h3>
-                    <p
-                      className={`text-sm md:text-base leading-relaxed font-medium ${
-                        milestone.status === "upcoming"
-                          ? "text-white/40"
-                          : "text-white/70"
-                      }`}
-                    >
-                      {milestone.description}
-                    </p>
+                      {/* Text Content */}
+                      <div className="p-5 md:p-6 flex-1">
+                        {/* Year Badge */}
+                        <span
+                          className={`inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-3 ${
+                            milestone.status === "current"
+                              ? "bg-coral-500/30 text-coral-300 border border-coral-500/30"
+                              : milestone.status === "completed"
+                              ? "bg-aqua-500/20 text-aqua-300 border border-aqua-500/20"
+                              : "bg-white/10 text-white/50 border border-white/10"
+                          }`}
+                        >
+                          {milestone.status === "current" && (
+                            <span className="inline-block w-2 h-2 rounded-full bg-coral-400 animate-pulse mr-2 align-middle"></span>
+                          )}
+                          {milestone.year}
+                          {milestone.status === "current" && " — Now"}
+                        </span>
+
+                        <h3
+                          className={`text-lg md:text-xl font-black mb-2 leading-tight ${
+                            milestone.status === "upcoming"
+                              ? "text-white/60"
+                              : "text-white"
+                          }`}
+                        >
+                          {milestone.title}
+                        </h3>
+                        <p
+                          className={`text-sm leading-relaxed font-medium ${
+                            milestone.status === "upcoming"
+                              ? "text-white/40"
+                              : "text-white/65"
+                          }`}
+                        >
+                          {milestone.description}
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </motion.div>
             );
           })}
+
+          {/* Bottom dot */}
+          <div className="absolute left-6 md:left-1/2 -translate-x-1/2 bottom-0 z-20">
+            <div className="w-4 h-4 rounded-full bg-gradient-to-br from-coral-400 to-coral-600 border-4 border-ocean-950 shadow-lg"></div>
+          </div>
         </div>
       </div>
     </section>

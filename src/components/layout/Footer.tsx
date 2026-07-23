@@ -21,13 +21,12 @@ export default function Footer() {
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           <div className="col-span-1 md:col-span-2">
-            <a href="#" className="flex items-center gap-2 mb-6">
+            <a href="#" className="flex items-center gap-2 mb-6 relative h-12 w-64 block">
               <Image
                 src="/image.png"
                 alt="Aquatown Logo"
-                width={200}
-                height={50}
-                className="h-12 w-auto object-contain mix-blend-screen"
+                fill
+                className="object-contain object-left origin-left scale-[2.5] md:scale-[3] mix-blend-screen"
               />
             </a>
             <p className="text-white/70 max-w-sm mb-6 leading-relaxed">

@@ -7,7 +7,6 @@ import GoKart from "@/components/sections/GoKart";
 import Seasonal from "@/components/sections/Seasonal";
 import Safety from "@/components/sections/Safety";
 import Timeline from "@/components/sections/Timeline";
-import Countdown from "@/components/sections/Countdown";
 import Contact from "@/components/sections/Contact";
 import SmoothScrollProvider from "@/components/providers/SmoothScrollProvider";
 
@@ -24,7 +23,6 @@ export default function Home() {
           <Seasonal />
           <Safety />
           <Timeline />
-          <Countdown />
           <Contact />
         </main>
         <Footer />
